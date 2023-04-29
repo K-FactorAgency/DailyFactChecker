@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daily Fact Checker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Daily Fact Checker</h1>
+      <p>Answer the following questions to check your daily facts!</p>
+      <form>
+        <label for="q1">How long did you work today?</label>
+        <input type="number" id="q1" name="q1" min="0" max="24" required>
+
+        <label for="q2">How long did you invest in yourself today?</label>
+        <input type="number" id="q2" name="q2" min="0" max="24" required>
+
+        <label for="q3">What is your weight today?</label>
+        <input type="number" id="q3" name="q3" min="0" max="150" required>
+
+        <button type="submit" id="submit">Check Facts</button>
+      </form>
+      <p id="result"></p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
